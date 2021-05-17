@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        char g;
+ // inputting character at each position
+ for(int j=0;j<n;j++)
+        {
+            g = sc.next().charAt(0);
+            if(g=='B' || g=='b')
+            {
+                System.out.println("BattleShip");
+            }
+         if(g=='c' || g =='C')
+         {
+             System.out.println("Cruiser");
+         }
+          if(g=='d' || g =='D')
+         {
+             System.out.println("Destroyer");
+         }
+          if(g=='f' || g =='F')
+         {
+             System.out.println("Frigate");
+         }
+        }
+    }
+}
